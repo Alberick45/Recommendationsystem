@@ -16,6 +16,8 @@ body {
 .navbar ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    gap: 10px;
 }
 
 .navbar li {
@@ -24,9 +26,9 @@ body {
 }
 
 .navbar a {
-    color: #fff;
     text-decoration: none;
     transition: color 0.3s;
+    color: #007bff;
 }
 
 .navbar a:hover {
@@ -141,3 +143,131 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #ffa500; /* Highlight color on hover */
 }
+
+
+
+
+ /* Toast Notification Styling */
+ .toast {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 15px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slide-in 0.5s ease-out;
+    z-index: 1000;
+}
+
+.toast-success {
+    background-color: #28a745; /* Green for success */
+}
+
+.toast-error {
+    background-color: #dc3545; /* Red for error */
+}
+
+.icon {
+    font-size: 16px;
+}
+
+.close-toast {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* Toast Notification Styling */
+/* .toast {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 15px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slide-in 0.5s ease-out;
+    z-index: 1000;
+}
+
+.toast-success {
+    background-color: #28a745; Green for success 
+}
+
+.toast-error {
+    background-color: #dc3545;  Red for error 
+}
+
+.icon {
+    font-size: 16px;
+}
+
+.close-toast {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ */
